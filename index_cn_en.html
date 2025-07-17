@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-key="page_title">TechNova - Innovative Tech Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <style>
+    .hidden-lang { display: none; }
+  </style>
+</head>
+
+<body class="font-sans text-gray-800 bg-white">
+  <!-- Language Switcher -->
+  <div class="fixed top-4 right-4 z-50">
+    <select id="lang-switch" class="px-2 py-1 border rounded bg-white shadow">
+      <option value="en">English</option>
+      <option value="zh">中文</option>
+    </select>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold text-blue-600">TechNova</div>
+      <nav class="space-x-4">
+        <a href="#home" data-key="nav_home" class="text-gray-600 hover:text-blue-600">Home</a>
+        <a href="#services" data-key="nav_services" class="text-gray-600 hover:text-blue-600">Services</a>
+        <a href="#about" data-key="nav_about" class="text-gray-600 hover:text-blue-600">About</a>
+        <a href="#contact" data-key="nav_contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="py-20 bg-gradient-to-b from-blue-50 to-white">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        <span data-key="hero_title">Empowering Your Business with Innovative Tech Solutions</span>
+      </h1>
+      <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+        <span data-key="hero_subtitle">We help businesses transform through technology, strategy, and execution.</span>
+      </p>
+      <a href="#contact" class="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700">
+        <span data-key="cta_button">Get in Touch</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12" data-key="services_title">Our Services</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="p-6 border rounded hover:shadow">
+          <i class="fa fa-laptop text-3xl text-blue-600 mb-4"></i>
+          <h3 class="font-semibold text-xl" data-key="service1_title">Web & App Development</h3>
+          <p class="text-gray-600 mt-2" data-key="service1_desc">Custom web and mobile applications built for scale and performance.</p>
+        </div>
+        <div class="p-6 border rounded hover:shadow">
+          <i class="fa fa-cloud text-3xl text-green-500 mb-4"></i>
+          <h3 class="font-semibold text-xl" data-key="service2_title">Cloud & DevOps</h3>
+          <p class="text-gray-600 mt-2" data-key="service2_desc">Scalable cloud infrastructure and automated deployment pipelines.</p>
+        </div>
+        <div class="p-6 border rounded hover:shadow">
+          <i class="fa fa-shield-alt text-3xl text-purple-500 mb-4"></i>
+          <h3 class="font-semibold text-xl" data-key="service3_title">Cybersecurity</h3>
+          <p class="text-gray-600 mt-2" data-key="service3_desc">End-to-end protection for your data, apps, and infrastructure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-6" data-key="about_title">About Us</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto text-center" data-key="about_desc">
+        Founded in 2010, TechNova has helped 200+ enterprises transform through technology. Our 150+ experts deliver tailored solutions across web, cloud, AI, and cybersecurity.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-6" data-key="contact_title">Contact Us</h2>
+      <form class="max-w-lg mx-auto space-y-4">
+        <input type="text" placeholder="Name" class="w-full p-3 border rounded" required />
+        <input type="email" placeholder="Email" class="w-full p-3 border rounded" required />
+        <textarea placeholder="Message" class="w-full p-3 border rounded" rows="4" required></textarea>
+        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700">
+          <span data-key="send_button">Send Message</span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p>&copy; 2025 TechNova. <span data-key="footer_rights">All rights reserved.</span></p>
+  </footer>
+
+  <!-- Language Script -->
+  <script>
+    const translations = {
+      en: {
+        page_title: "TechNova - Innovative Tech Solutions",
+        nav_home: "Home",
+        nav_services: "Services",
+        nav_about: "About",
+        nav_contact: "Contact",
+        hero_title: "Empowering Your Business with Innovative Tech Solutions",
+        hero_subtitle: "We help businesses transform through technology, strategy, and execution.",
+        cta_button: "Get in Touch",
+        services_title: "Our Services",
+        service1_title: "Web & App Development",
+        service1_desc: "Custom web and mobile applications built for scale and performance.",
+        service2_title: "Cloud & DevOps",
+        service2_desc: "Scalable cloud infrastructure and automated deployment pipelines.",
+        service3_title: "Cybersecurity",
+        service3_desc: "End-to-end protection for your data, apps, and infrastructure.",
+        about_title: "About Us",
+        about_desc: "Founded in 2010, TechNova has helped 200+ enterprises transform through technology. Our 150+ experts deliver tailored solutions across web, cloud, AI, and cybersecurity.",
+        contact_title: "Contact Us",
+        send_button: "Send Message",
+        footer_rights: "All rights reserved."
+      },
+      zh: {
+        page_title: "TechNova - 创新科技解决方案",
+        nav_home: "首页",
+        nav_services: "服务",
+        nav_about: "关于我们",
+        nav_contact: "联系我们",
+        hero_title: "为您的业务提供创新科技解决方案",
+        hero_subtitle: "我们通过技术、战略和执行帮助企业实现数字化转型。",
+        cta_button: "立即联系",
+        services_title: "我们的服务",
+        service1_title: "网站与应用开发",
+        service1_desc: "为性能和扩展性量身定制的高性能网站与移动应用。",
+        service2_title: "云与DevOps",
+        service2_desc: "可扩展的云基础设施与自动化部署流程。",
+        service3_title: "网络安全",
+        service3_desc: "为您的数据、应用和基础设施提供端到端保护。",
+        about_title: "关于我们",
+        about_desc: "成立于2010年，TechNova 已帮助200多家企业实现技术转型。150多位专家为您提供网站、云、AI 和安全领域的定制解决方案。",
+        contact_title: "联系我们",
+        send_button: "发送消息",
+        footer_rights: "版权所有。"
+      }
+    };
+
+    function switchLanguage(lang) {
+      document.querySelectorAll("[data-key]").forEach(el => {
+        const key = el.getAttribute("data-key");
+        if (translations[lang] && translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+    }
+
+    document.getElementById("lang-switch").addEventListener("change", function () {
+      switchLanguage(this.value);
+    });
+
+    // 初始化
+    switchLanguage("en");
+  </script>
+</body>
+</html>
